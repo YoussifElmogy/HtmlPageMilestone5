@@ -1,0 +1,365 @@
+/* .leftpage{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+} */
+
+/* GLOBAL */
+
+.mt-100{
+    margin-top: 100px;
+}
+.sec-title span{
+    color: #626262;
+    padding-bottom: 17px;
+    display: block;
+
+}
+.card h5{
+    font-size: 17px;   
+}
+.card .image img{
+    transform: scale(1);
+    transition: .4s ease-in-out;
+}
+.card .image img:hover{
+    transform: scale(1.2);
+    transition: .4s ease-in-out;
+}
+
+/* Start Loader */
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.loader>.spinner-border{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    z-index: 100000;
+}
+/* start header */
+header{
+    background-image: url(../Media/home_slider_bg.webp);
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    background-color: #25A9BD;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover
+
+ {
+    color:white;
+    padding: 3px 29px;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link::before{
+    content: ' ';
+    position: absolute;
+    bottom: -54px;
+    left: 50%;
+    transform: translateX(-50%);
+    border:13px solid;
+    border-color: #25A9BD transparent transparent transparent;
+    opacity: 0;
+    transition: .4s ease-in-out;
+
+}
+/* .navbar-light .navbar-nav .nav-link.disable:before{
+    display: none;
+} */
+.navbar-light .navbar-nav .nav-link:hover::before,
+.navbar-light .navbar-nav .active.nav-link::before{
+    opacity: 1;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.hero{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    
+}
+.hero h1{
+    font-size: 140px;
+    font-weight: bolder;
+}
+.hero p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.hero button{
+   
+    color: white;
+    background-color: #25A9BD;
+    font-size: 19px;
+    padding: 10px 40px;
+    transition: .4s ease-in-out;
+}
+.hero button:hover{
+    background-color: #FF8D61;
+    color: white;
+}
+/* Text-section */
+
+.text-section{
+    padding: 120px;
+    
+}
+
+.text-section h5{
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #626262;
+}
+.text-section p{
+    font-size: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.sec-title h1::before{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF8D61;
+    width: 8%;
+    height: 2px;
+}
+
+.Feature-image{
+    background: url(../Media/img4.webp) ;
+    background-size: cover;
+    height: 530px;
+    color: white;
+    
+}
+.Feature-image>.allf{
+    padding-top: 200px;
+    padding-left: 100px;
+   
+}
+.allf h6{
+    letter-spacing: 4px;
+}
+.allf button{
+    color: white;
+    background-color:black;
+    font-size: 19px;
+    padding: 10px 40px;
+    transition: .4s ease-in-out;
+}
+.allf button:hover{
+    background-color: #FF8D61;
+    color: white;
+}
+.card-body a{
+    color:black;
+    text-decoration: none;
+   
+}
+.card-body a:hover{
+    color: #25A9BD;
+    transition: .2s ease-in-out;
+}
+
+.tutorials .featured-article {
+    background-image: url(../media/featured_article_2_bg.jpg);
+}
+.featured-article{
+    height: 100%;
+    color: white;
+    
+}
+
+/* end tutorials */
+
+
+
+
+.right-part h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+.right-part h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 50px;
+    /* transform:translateX(-50%); */
+    background-color: #ff8d61;
+    width: 40%;
+    height: 2px;
+}
+
+/* full button section */
+.full-button button{
+    background-color: #191919;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+.full-button button:hover{
+    background-color: #25a9bd;
+}
+/* end full button section */
+
+/* start fforum sec */
+
+.forum{
+    padding: 100px 0 0;
+    background-color: #F2F2F2;
+    margin-top: 0%;
+
+}
+.box{
+    padding: 30px;
+    background-color: #fff;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #25a9bd;
+}
+.box-icon{
+    background-color: #ff8d61;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px auto;
+    line-height: 70px;
+    font-size: 33px;
+    cursor: pointer;
+    color: #fff;
+}
+.box-icon::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 50%;
+    opacity: 0;    
+}
+.box-icon:hover::before{
+    animation: expand .5s cubic-bezier(.17 , .67 , .83,.67);
+    box-shadow: 0px 0px 10px 3px #ff8d61;
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(1.1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+.box h3{
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    padding-bottom: 30px;
+}
+.box h3:hover{
+    color: #ff8d61;
+}
+/* end forum  */
+
+
+/* start comunity */
+.comunity{
+    margin-top: 0%;
+    background-image: url(..//media/join_now_cta_bg.webp);
+    color: white;
+    padding: 100px 0;
+    background-position: center;
+    background-size: cover;
+}
+
+/* end comunity */
+
+/* start sub  */
+.sub{
+    background-color: #f2f2f2;
+    padding: 100px 0 ;
+}
+.sub input{
+    all:unset;
+    background-color: #fff;
+    padding: 20px ;
+    width: 40%;
+    text-align: left;
+    font-size: 13px;
+    margin-right: 40px;
+
+}
+.sub button{
+    background-color: black;
+}
+/* end sub */
+
+/* start footer */
+footer{
+    padding: 100px 0;
+}
+/* end footer */
+
+/*###################################################################################################*/
+/*###################################################################################################*/
+/* ##################################################################################################*/
+/*###################################################################################################*/
+
+/* header 2 */
+.header2{
+    height: 60vh;
+    position: relative;
+    
+} .featured-article{
+    position: relative;
+}
+.featured-article button{
+    color: white;
+    background-color:black;
+    font-size: 19px;
+    padding: 10px 40px;
+    transition: .4s ease-in-out;
+}
+.changearticle{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+/* end text-section */
